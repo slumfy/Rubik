@@ -22,10 +22,22 @@ def parsing(inst):
       error(1, tab[idx])
     print("tableau d'instuction", idx,"\t",tab[idx])
 
+def print_rubik():
+  pad = 0
+  print("\n len de rubik",len(rubik))
+  for idx in range (0, 6):
+    print("face =" ,idx)
+    for idx in range (0, 9):
+      print (rubik[idx + pad], end = " ")
+      if (idx + 1) % 3 == 0:
+       print()
+    pad += 9
+    print()
+
 def main():
   if len(sys.argv) != 2:
     error(0, "0")
   parsing(sys.argv[1])
+  print_rubik()
 
 main()
-print(len(rubik))
