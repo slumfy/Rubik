@@ -123,5 +123,5 @@ def right_rev(rubik):
 def right_double(rubik):
     i = 0
     while i < 2:
-        left(rubik)
+        right(rubik)
         i += 1
