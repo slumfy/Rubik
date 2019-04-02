@@ -15,8 +15,6 @@ def main():
     parsing.error(0, "0")
   inst = parsing.parsing(sys.argv[1])
   print_rubik.print_rubik(rubik)
-  move.back_double(rubik)
-  print_rubik.print_rubik(rubik)
   for idx in range(len(inst)):
     print("tableau d'instuction", idx,"\t",inst[idx])
 

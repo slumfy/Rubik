@@ -1,6 +1,11 @@
 import utils
 
 def print_rubik(rubik):
+  for idx in range(len(rubik)):
+    print(rubik[idx], end = "")
+    if (idx + 1) % 9 == 0:
+     print()
+
   pad = 0
   print("\n")
   for idx in range (0, 6):
@@ -12,18 +17,18 @@ def print_rubik(rubik):
           print("\n\t", end = "")
     if idx == 1:
       print("\n LEFT  FRONT  RIGHT  BACK")
-      for idx in utils.my_range(0,8,3):
+      for y in utils.my_range(0,8,3):
         for idx in range (0,3):
-          print(rubik[idx + pad], end = "")
+          print(rubik[idx +y + pad], end = "")
         print("\t", end = "")
         for idx in range (0,3):
-          print(rubik[idx + pad *2], end = "")
+          print(rubik[idx +y + pad *2], end = "")
         print("\t", end = "")
         for idx in range (0,3):
-          print(rubik[idx + pad *3], end = "")
+          print(rubik[idx +y + pad *3], end = "")
         print("\t", end = "")
         for idx in range (0,3):
-          print(rubik[idx + pad *4], end = "")
+          print(rubik[idx +y + pad *4], end = "")
         print()
     if idx == 5:
       print("\n\tDOWN\n\t", end = "")
