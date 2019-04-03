@@ -21,6 +21,14 @@ def front_double(rubik):
         front(rubik)
         i += 1
 
+def mfront(rubik, x):
+	if x == 0:
+		front(rubik)
+	elif x == 1:
+		front_rev(rubik)
+	elif x == 2:
+		front_double(rubik)
+
 # MOUVEMENT BACK
 def back(rubik):
     utils.swap(rubik, [15,53,29,0])
@@ -41,6 +49,14 @@ def back_double(rubik):
     while i < 2:
         back(rubik)
         i += 1
+
+def mback(rubik, x):
+	if x == 0:
+		back(rubik)
+	elif x == 1:
+		back_rev(rubik)
+	elif x == 2:
+		back_double(rubik)
 
 # MOUVEMENT UP
 def up(rubik):
@@ -63,6 +79,14 @@ def up_double(rubik):
         up(rubik)
         i += 1
 
+def mup(rubik, x):
+	if x == 0:
+		up(rubik)
+	elif x == 1:
+		up_rev(rubik)
+	elif x == 2:
+		up_double(rubik)
+
 #MOUVEMENT DOWN
 def down(rubik):
     utils.swap(rubik, [15,24,33,42])
@@ -83,6 +107,14 @@ def down_double(rubik):
     while i < 2:
         down(rubik)
         i += 1
+
+def mdown(rubik, x):
+	if x == 0:
+		down(rubik)
+	elif x == 1:
+		down_rev(rubik)
+	elif x == 2:
+		down_double(rubik)
 
 # MOUVEMENT LEFT
 def left(rubik):
@@ -105,6 +137,14 @@ def left_double(rubik):
         left(rubik)
         i += 1
 
+def mleft(rubik, x):
+	if x == 0:
+		left(rubik)
+	elif x == 1:
+		left_rev(rubik)
+	elif x == 2:
+		left_double(rubik)
+
 # MOUVEMENT RIGHT
 def right(rubik):
     utils.swap(rubik, [2,36,47,20])
@@ -125,3 +165,11 @@ def right_double(rubik):
     while i < 2:
         right(rubik)
         i += 1
+
+def mright(rubik, x):
+	if x == 0:
+		right(rubik)
+	elif x == 1:
+		right_rev(rubik)
+	elif x == 2:
+		right_double(rubik)
