@@ -5,15 +5,15 @@ def front(rubik):
     utils.swap(rubik, [17,47,27,6])
     utils.swap(rubik, [14,46,30,7])
     utils.swap(rubik, [11,45,33,8])
-    utils.swap(rubik, [24,26,20,18])
-    utils.swap(rubik, [21,23,25,19])
+    utils.swap(rubik, [18,20,26,24])
+    utils.swap(rubik, [19,25,21,23])
 
 def front_rev(rubik):
     utils.swap(rubik, [6,27,47,17])
     utils.swap(rubik, [7,30,46,14])
     utils.swap(rubik, [8,33,45,11])
-    utils.swap(rubik, [18,20,26,24])
-    utils.swap(rubik, [19,25,23,21])
+    utils.swap(rubik, [24,26,20,18])
+    utils.swap(rubik, [23,21,25,19])
 
 def front_double(rubik):
     i = 0
