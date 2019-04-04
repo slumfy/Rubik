@@ -15,9 +15,8 @@ def parsing(inst):
   for idx in range(len(tab)):
     if len(tab[idx]) > 2:
       error(1, tab[idx])
-    elif any(i in tab[idx][0] for i in db) == False:
+    if any(i in tab[idx][0] for i in db) == False:
       error(1, tab[idx])
     elif len(tab[idx]) == 2 and any(i in tab[idx][1] for i in db2) == False:
       error(1, tab[idx])
-
-    return tab
+  return tab
