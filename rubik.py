@@ -17,8 +17,5 @@ def main():
   inst = parsing.parsing(sys.argv[1])
   print_rubik.print_rubik(rubik)
   shuffle.shuffle(rubik, inst)
-  print_rubik.print_rubik(rubik)
-  for idx in range(len(inst)):
-    print("tableau d'instuction", idx,"\t",inst[idx])
 
 main()

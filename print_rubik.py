@@ -1,11 +1,6 @@
 import utils
 
 def print_rubik(rubik):
-  for idx in range(len(rubik)):
-    print(rubik[idx], end = "")
-    if (idx + 1) % 9 == 0:
-     print()
-
   pad = 0
   print("\n")
   for idx in range (0, 6):

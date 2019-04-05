@@ -151,14 +151,14 @@ def right(rubik):
     utils.swap(rubik, [5,39,50,23])
     utils.swap(rubik, [8,42,53,26])
     utils.swap(rubik, [27,29,35,33])
-    utils.swap(rubik, [28,30,34,32])
+    utils.swap(rubik, [28,32,34,30])
 
 def right_rev(rubik):
     utils.swap(rubik, [20,47,36,2])
     utils.swap(rubik, [23,50,39,5])
     utils.swap(rubik, [26,53,42,8])
     utils.swap(rubik, [33,35,29,27])
-    utils.swap(rubik, [28,30,34,32])
+    utils.swap(rubik, [30,34,32,28])
 
 def right_double(rubik):
     i = 0

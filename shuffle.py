@@ -1,5 +1,6 @@
 import sys
 import move
+import print_rubik
 
 def shuffle(rubik, inst):
     for idx in range(len(inst)):
@@ -45,3 +46,5 @@ def shuffle(rubik, inst):
                 move.mdown(rubik, 1)
             elif inst[idx][1] == "2":
                 move.mdown(rubik, 2)
+        print("tableau d'instuction", idx,"\t",inst[idx])
+        print_rubik.print_rubik(rubik)
