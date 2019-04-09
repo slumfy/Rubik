@@ -11,7 +11,7 @@ def error(info, string):
 def parsing(inst):
   db = ["F","R","U","B","L","D"]
   db2 = ["2", "'"]
-  tab = inst.split(" ")
+  tab = inst.split()
   for idx in range(len(tab)):
     if len(tab[idx]) > 2:
       error(1, tab[idx])
